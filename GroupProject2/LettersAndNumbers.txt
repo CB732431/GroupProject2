@@ -22,5 +22,26 @@ System.out.println("1) Doubles\n2) Letters");
 	}
 
 		//Ini's part
+private static void letterAnswer() {
+				Scanner input = new Scanner(System.in);
+				
+				System.out.print("Enter range of characters: ");
+				
+		        char letter1 = input.next().charAt(0);
+		        char letter2 = input.next().charAt(0);
+		        
+				
+				if (letter1 > letter2) {
+					while(letter1 >= letter2) {
+						System.out.print(letter1-- + " ");
+					}
+				}
+				else if (letter1 < letter2) {
+					while(letter1 <= letter2) {
+						System.out.print(letter1++ + " ");
+				}
+				}
+				}		
+	
 
 	//Biro's part
