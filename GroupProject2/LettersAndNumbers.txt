@@ -1,6 +1,25 @@
 //GroupProject2
 
 		//Conner's part
+System.out.println("1) Doubles\n2) Letters");
+        System.out.print("Enter answer: ");
+        
+        int[] arrayAnswer = {1,2};
+        double answer = input.nextDouble();
+        
+		if (answer == arrayAnswer[0]) {
+			
+			doubleAnswer();
+		}
+						
+		else if (answer == arrayAnswer[1]) {
+			
+			letterAnswer();
+		}
+			
+		else
+			System.out.print("That's not an option, moron");
+	}
 
 		//Ini's part
 
