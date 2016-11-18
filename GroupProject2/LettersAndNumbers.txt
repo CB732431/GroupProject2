@@ -45,3 +45,30 @@ private static void letterAnswer() {
 	
 
 	//Biro's part
+	private static void doubleAnswer() {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Enter range of doubles: ");
+		
+        double number1 = input.nextDouble(); 
+		double number2 = input.nextDouble();
+		
+		if (number1 > number2) {
+			while(number1 >= number2) {
+				System.out.print(number1-- + " ");
+			}
+		}
+		else if (number1 < number2) {
+			while(number1 <= number2) {
+				System.out.print(number1++ + " ");
+		}
+		}
+		if (number1 > number2) {
+			System.out.print(number2);
+			{
+		}
+		}
+		return;
+	}			
+		
+	}		
