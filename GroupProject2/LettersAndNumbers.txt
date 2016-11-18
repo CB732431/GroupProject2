@@ -1,7 +1,79 @@
 //GroupProject2
+import java.util.Scanner;
+public class LettersAndNumbers {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
 
 		//Conner's part
+System.out.println("1) Doubles\n2) Letters");
+        System.out.print("Enter answer: ");
+        
+        int[] arrayAnswer = {1,2};
+        double answer = input.nextDouble();
+        
+		if (answer == arrayAnswer[0]) {
+			
+			doubleAnswer();
+		}
+						
+		else if (answer == arrayAnswer[1]) {
+			
+			letterAnswer();
+		}
+			
+		else
+			System.out.print("That's not an option, moron");
+	}
 
 		//Ini's part
+private static void letterAnswer() {
+				Scanner input = new Scanner(System.in);
+				
+				System.out.print("Enter range of characters: ");
+				
+		        char letter1 = input.next().charAt(0);
+		        char letter2 = input.next().charAt(0);
+		        
+				
+				if (letter1 > letter2) {
+					while(letter1 >= letter2) {
+						System.out.print(letter1-- + " ");
+					}
+				}
+				else if (letter1 < letter2) {
+					while(letter1 <= letter2) {
+						System.out.print(letter1++ + " ");
+				}
+				}
+				}		
+	
 
 	//Biro's part
+	private static void doubleAnswer() {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Enter range of doubles: ");
+		
+        double number1 = input.nextDouble(); 
+		double number2 = input.nextDouble();
+		
+		if (number1 > number2) {
+			while(number1 >= number2) {
+				System.out.print(number1-- + " ");
+			}
+		}
+		else if (number1 < number2) {
+			while(number1 <= number2) {
+				System.out.print(number1++ + " ");
+		}
+		}
+		if (number1 > number2) {
+			System.out.print(number2);
+			{
+		}
+		}
+		return;
+	}			
+		
+	}		
