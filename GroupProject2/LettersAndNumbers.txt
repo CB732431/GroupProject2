@@ -25,6 +25,25 @@ System.out.println("1) Doubles\n2) Letters");
 		else
 			System.out.print("That's not an option, moron");
 	}
+		private static int[][] randomAnswer() {
+
+			int[][] Random = new int [3][3];
+			{
+					for(int i = 0; i<Random.length; i++){
+						Random[0][i] = (int)(1 + Math.random() * 100);
+					}
+					for(int i = 0; i<Random.length; i++){
+						Random[1][i] = (int)(1 + Math.random() * 100);
+					}
+			}			
+			
+		for (int i = 0; i < Random[0].length; i++)
+					System.out.print(Random[0][i] + " ");
+			System.out.println();
+			for (int j = 0; j < Random[1].length; j++)
+					System.out.print(Random[1][j] + " ");			
+			return Random;
+	}
 
 		//Ini's part
 private static void letterAnswer() {
